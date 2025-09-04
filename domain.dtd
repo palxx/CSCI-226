@@ -1,0 +1,22 @@
+<!ELEMENT menu (restaurant, lastUpdated, items, promos?)>
+
+<!ELEMENT item (name, price, availability, calories?, allergens?)>
+<!ATTLIST item
+  id ID #REQUIRED
+  category (appetizer|entree|dessert|beverage) #REQUIRED
+  spicy (none|mild|medium|hot) "none"
+  vegetarian (yes|no) "no"
+  glutenFree (yes|no) "no"
+  orders7d CDATA #IMPLIED
+  ratingAvg CDATA #IMPLIED
+  ratingCount CDATA #IMPLIED
+>
+
+<!ELEMENT promos (promo+)>
+<!ELEMENT promo EMPTY>
+<!ATTLIST promo
+  id ID #REQUIRED
+  itemRef IDREF #REQUIRED
+  percent CDATA #REQUIRED
+  validTo CDATA #REQUIRED
+>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "domain.dtd">
+<menu>
+  <restaurant>
+    <name>Sunny Side Bistro</name>
+    <address>123 Maple St, Fresno, CA</address>
+  </restaurant>
+  <lastUpdated>2025-09-01</lastUpdated>
+  <items>
+    <item id="i100" category="snack" vegetarian="yes" glutenFree="no">
+      <name>Garlic Bread</name>
+      <price currency="USD">5.25</price>
+      <!-- Missing required <availability/> -->
+      <promos>
+      <promo id="p001" itemRef="i002" percent="15" validTo="2025-09-30"/>
+      </promos>
+      <!--  above not broken-->
+      <promos>
+      <promo id="pBad" itemRef="i999" validTo="2025-09-30"/> <!-- missing percent; bad IDREF -->
+      </promos>
+      <!--  above broken-->
+      <allergens>
+        <allergen>Gluten</allergen>
+      </allergens>
+    </item>
+  </items>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "domain.dtd">
+<menu>
+  <restaurant>
+    <name>Sunny Side Bistro</name>
+    <address>123 Maple St, Fresno, CA</address>
+  </restaurant>
+  <lastUpdated>2025-09-01</lastUpdated>
+  <items>
+    <item id="i001" category="appetizer" spicy="mild" vegetarian="yes" glutenFree="yes">
+      <name>Avocado Toast Bites</name>
+      <price currency="USD">7.50</price>
+      <availability status="available"/>
+      <calories>220</calories>
+      <allergens>
+        <allergen>Gluten</allergen>
+      </allergens>
+    </item>
+    <item id="i002" category="entree" spicy="medium" vegetarian="no" glutenFree="no">
+      <name>Chicken Tikka Bowl</name>
+      <price currency="USD">13.75</price>
+      <availability status="seasonal"/>
+      <calories>640</calories>
+      <allergens>
+        <allergen>Dairy</allergen>
+      </allergens>
+    </item>
+    <item id="i003" category="beverage" spicy="none" vegetarian="yes" glutenFree="yes">
+      <name>Fresh Lime Soda</name>
+      <price currency="USD">3.95</price>
+      <availability status="available"/>
+      <allergens>
+        <allergen>None</allergen>
+      </allergens>
+    </item>
+  </items>
+</menu>
